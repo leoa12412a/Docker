@@ -40,3 +40,34 @@ docker run -i -t centos /bin/bash
 這樣就完成了, 現在已經在 Docker 的 centos Container 內使用 /bin/bash.
 
 要離開 Container, 只要在指令模式按組合鍵 Ctrl-p + Ctrl-q.
+
+
+
+# Docker-compose
+
+## Install docker-compose
+
+安裝所需的packages
+```
+$ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+```
+
+配置docker-ce repo(路徑來源)
+```
+$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+```
+
+安裝Enterprise Linux的額外軟件包
+```
+$ sudo yum install epel-release
+```
+
+安裝python-pip
+```
+$ sudo yum install -y python-pip
+```
+
+安裝Docker Compose
+```
+$ sudo pip install docker-compose
+```
