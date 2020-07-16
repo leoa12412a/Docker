@@ -44,7 +44,7 @@ docker run -i -t centos /bin/bash
 
 
 # Docker-compose
-
+<strike>
 ## Install docker-compose
 
 安裝所需的packages
@@ -71,3 +71,4 @@ $ sudo yum install -y python-pip
 ```
 $ sudo pip install docker-compose
 ```
+</strike>
